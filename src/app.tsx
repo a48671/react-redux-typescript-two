@@ -1,4 +1,7 @@
 // Core
 import React, { FC } from 'react';
 
-export const App: FC = () => <h1>Hello</h1>;
+// Components
+import { Header } from './components/header/header';
+
+export const App: FC = () => <Header />;
