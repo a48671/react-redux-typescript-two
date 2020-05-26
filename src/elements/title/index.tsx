@@ -1,5 +1,11 @@
 // Core
-import React, { FC } from 'react';
+import React, { FC, ReactElement } from 'react';
 import './style.css';
 
-export const Title: FC = () => (<div className='title'>Title starshipsl</div>);
+type PropTypes = {
+  children: string;
+};
+
+export const Title: FC<PropTypes> = ({ children }: PropTypes): ReactElement => (
+  <div className="title">{children}</div>
+);

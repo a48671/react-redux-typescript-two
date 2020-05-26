@@ -4,7 +4,7 @@ import React, { FC, useState } from 'react';
 type PropTypes = {
   title?: string;
   children?: never;
-}
+};
 
 export const Header: FC<PropTypes> = ({ title }: PropTypes) => {
   const header = title || 'header';
@@ -15,8 +15,12 @@ export const Header: FC<PropTypes> = ({ title }: PropTypes) => {
     <>
       <h1>{header}</h1>
       <p>{counter}</p>
-      <button type='button' onClick={decrease}>decr</button>
-      <button type='button' onClick={increase}>incr</button>
+      <button type="button" onClick={decrease}>
+        decr
+      </button>
+      <button type="button" onClick={increase}>
+        incr
+      </button>
     </>
   );
 };
